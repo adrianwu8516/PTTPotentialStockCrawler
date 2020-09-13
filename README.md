@@ -28,8 +28,12 @@ PS: 這個爬蟲主要使用 Google Apps Script，只要你有 Gmail，就可以
 1. 因為 Google Apps Script 會需要一些權限，才能自動工作，所以需要先跑一次，寄出第一封信
 2. 找到上方操作欄位中「選取函式」（在剛剛時鐘旁邊），並且選擇主要的 Function - pttPotentialStockParser，並且按下「▶︎」圖示就會開始跑了
 3. 通過 Google Drive, Spreadsheet 等權限設定
-4. 信箱中會出現一封「PTT低調警報」！而且之後每天，在指定時間，也都會持續有更新的「PTT低調警報」寄到信箱！
+4. 信箱中會出現一封「PTT低調清單」！而且之後每天，在指定時間，也都會持續有更新的「PTT低調警報」寄到信箱！
 5. 另外，你的 Google Drive 中會出現一個名為「PTT股票版低調爬蟲資料庫」的 Spreadsheet 檔案，用於紀錄每天的低調股，可以用於回測。
+
+信件示意圖
+===
+
 ![信件示意圖](https://i.imgur.com/4XCHFQM.png)
 
 <br>
