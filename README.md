@@ -19,14 +19,14 @@ PS: 這個爬蟲主要使用 Google Apps Script，只要你有 Gmail，就可以
 ===
 1. 在 pttPotentialStockCrawler.gs 檔案中，在第一行中加入自己想要寄信的 Email 對象
 2. 在上方操作欄位中找到時鐘圖示，點開後進入「觸發條件」設定，選擇「新增觸發條件」
-![找到觸發條件](https://i.imgur.com/UCr6yem.png)
-3. 在選擇要執行的功能中，選擇主要的 Function - pttPotentialStockCrawler，並且設定時間驅動 > 日計時器 > 你想寄信的時間
-<img src="https://i.imgur.com/yw8lywb.png" alt="觸發條件設定" width="500"/>
+![找到觸發條件](https://i.imgur.com/1cYr9k6.png)
+3. 在選擇要執行的功能中，選擇主要的 Function - pttPotentialStockParser，並且設定時間驅動 > 日計時器 > 你想寄信的時間
+<img src="https://i.imgur.com/LjY2NeU.png" alt="觸發條件設定" width="500"/>
 
 設定步驟 3 (寄出第一封信)
 ===
 1. 因為 Google Apps Script 會需要一些權限，才能自動工作，所以需要先跑一次，寄出第一封信
-2. 找到上方操作欄位中「選取函式」（在剛剛時鐘旁邊），並且選擇主要的 Function - pttPotentialStockCrawler，並且按下「▶︎」圖示就會開始跑了
+2. 找到上方操作欄位中「選取函式」（在剛剛時鐘旁邊），並且選擇主要的 Function - pttPotentialStockParser，並且按下「▶︎」圖示就會開始跑了
 3. 通過 Google Drive, Spreadsheet 等權限設定
 4. 信箱中會出現一封「PTT低調警報」！而且之後每天，在指定時間，也都會持續有更新的「PTT低調警報」寄到信箱！
 5. 另外，你的 Google Drive 中會出現一個名為「PTT股票版低調爬蟲資料庫」的 Spreadsheet 檔案，用於紀錄每天的低調股，可以用於回測。
