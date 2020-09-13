@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+      <base target="_top">
+  </head>
+  <body>
+    <h1>PTT 低調清單</h1>  
+    <div style="overflow-x:auto;">
+      <table style="height: 30px; width:100%;" cellspacing="6">
+      <tbody>
+        <tr style="height: 30px;">
+          <td style="text-align: center;"><strong>文章日期</strong></td>
+          <td style="text-align: center;"><strong>文章標題</strong></td>
+          <td style="text-align: center;"><strong>低調指數</strong></td>
+        </tr>
+        <? for(var url in mailObj){ ?>
+        <tr style="height: 20px;">
+          <td><?= mailObj[url].date ?></td>
+          <td><a href="https://www.ptt.cc/<?=url?>" target="_blank"><?= mailObj[url].title ?></a></td>
+          <? if (mailObj[url].score > 0){ ?>
+              <td><strong><span style="color: #ff0000;"><?= mailObj[url].score ?></span></strong></td>
+          <? }else{ ?>
+              <td><?= mailObj[url].score ?></td>
+          <? }?>
+        </tr>
+        <? } ?>
+      </tbody>
+      </table>
+    </div>
+  </body>
+  <footer>
+    <p>謹慎理財，小心至上，股運亨通～！</p>
+    <p>本服務僅供個人學術研究使用，所載的資料並不構成投資的意見或建議。</p>
+  </footer>
+</html>
