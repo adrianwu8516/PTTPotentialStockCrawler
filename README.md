@@ -7,7 +7,7 @@ PS: 這個爬蟲主要使用 Google Apps Script，只要你有 Gmail，就可以
 ![那麼在哪裡才能買的到呢](https://i.imgur.com/OLtIEDk.jpg)
 
 設定步驟 1（匯入程式碼）
-===
+---
 1. Fork 這個 repo 到你自己的 Github 中
 2. 到你的 Chrome 線上程式應用商店中下載 [Google Apps Script GitHub 助手](https://chrome.google.com/webstore/detail/google-apps-script-github/lfjcgcmkmjjlieihflfhjopckgpelofo?hl=zh-TW&utm_source=chrome-ntp-launcher)，並且依照指示與 Github 之間完成綁定
 3. 到 [Google Apps Script 主頁](https://script.google.com/home)中，新建立一個專案
@@ -16,7 +16,7 @@ PS: 這個爬蟲主要使用 Google Apps Script，只要你有 Gmail，就可以
 <br>
 
 設定步驟 2（自動寄信功能）
-===
+---
 1. 在 pttPotentialStockCrawler.gs 檔案中，在第一行中加入自己想要寄信的 Email 對象
 2. 在上方操作欄位中找到時鐘圖示，點開後進入「觸發條件」設定，選擇「新增觸發條件」
 ![找到觸發條件](https://i.imgur.com/1cYr9k6.png)
@@ -24,7 +24,7 @@ PS: 這個爬蟲主要使用 Google Apps Script，只要你有 Gmail，就可以
 <img src="https://i.imgur.com/LjY2NeU.png" alt="觸發條件設定" width="500"/>
 
 設定步驟 3 (寄出第一封信)
-===
+---
 1. 因為 Google Apps Script 會需要一些權限，才能自動工作，所以需要先跑一次，寄出第一封信
 2. 找到上方操作欄位中「選取函式」（在剛剛時鐘旁邊），並且選擇主要的 Function - pttPotentialStockParser，並且按下「▶︎」圖示就會開始跑了
 3. 通過 Google Drive, Spreadsheet 等權限設定
@@ -32,7 +32,7 @@ PS: 這個爬蟲主要使用 Google Apps Script，只要你有 Gmail，就可以
 5. 另外，你的 Google Drive 中會出現一個名為「PTT股票版低調爬蟲資料庫」的 Spreadsheet 檔案，用於紀錄每天的低調股，可以用於回測。
 
 信件示意圖
-===
+---
 
 ![信件示意圖](https://i.imgur.com/4XCHFQM.png)
 
