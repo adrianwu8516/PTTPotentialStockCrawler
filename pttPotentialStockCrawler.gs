@@ -24,7 +24,7 @@ function pttPotentialStockParser() {
       Logger.log(postObj[postUrl])
       
       // Pass 置底公告 and 閒聊區
-      if(title.includes('公告') || title.includes('閒聊')) continue;
+      if(title.includes('公告') || title.includes('閒聊') || title.includes('行事曆')) continue;
       
       // The "latestDate" showes that any data before this date has been processed
       latestDate = Date.parse(thisYear + '/' + date)
